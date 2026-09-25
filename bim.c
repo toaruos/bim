@@ -12306,6 +12306,7 @@ BIM_COMMAND(setcolor, "setcolor", "Set colorscheme colors") {
 	render_commandline_message("%20s = ", c->name); \
 	set_colors(*c->value, *c->value); \
 	printf("   "); \
+	reset(); \
 	set_colors(COLOR_FG, COLOR_BG); \
 	printf(" %s\n", *c->value); \
 	} while (0)
